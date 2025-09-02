@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3151e2; 
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .meu-nome {
+            font-family: "Bradley Hand ITC", cursive; 
+            font-size: 3.5rem;
+            font-weight: normal;
+            color: black;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #0a0770;
+            margin-top: -10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 600;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        
+        .sobre-mim {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .sobre-informacoes {
+            max-width: 600px;
+        }
+
+        .foto-perfil {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+        #projetos {
+            padding: 40px 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white; 
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .hobbies {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .hobby {
+            text-align: center;
+        }
+
+      
+        #skills ul {
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>
+            <span class="meu-nome">Vinicius Godoi</span>
+            <div class="subtitulo">Meu Portfólio</div>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+   </header>
+
+   
+   <section id="sobre">
+       <div class="container">
+          <div class="sobre-mim">
+              <img src="imagem1.jpg" alt="Foto" class="foto-perfil"> 
+              <div class="sobre-informacoes">
+                  <h2>Sobre Mim</h2>
+                  <p>- Turma de Desenvolvimento de Sistemas - 2º Semestre - SESI Amparo</p>
+                  <p>- Pratiquei Karatê por 4 anos</p>
+                  <p>- Curso de Programação e Informatica em 2020</p>
+              </div>
+          </div>
+       </div>
+   </section>
+
+
+   <section id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="cards">
+                <div class="card">
+                     <h3>SharkTank SENAI (2025)</h3>
+                     <p>Projeto com intuito de melhoria na escola, elaborado no 1º semestre e se estenderá até o fim do curso.</p>
+                     <a href="#" target="_blank"> 
+                     </a>
+                </div>
+                <div class="card">
+                     <h3>SharkTank de Empreendedorismo – Loja de Brigadeiros (2024)</h3>
+                     <p>Projeto desenvolvido com o objetivo de criar uma loja de brigadeiros.</p>
+                     <a href="#" target="_blank">
+                     </a>
+                </div>
+                     </a>
+                </div>
+            </div>
+        </div>
+   </section>
+
+  
+   <section id="hobbies">
+        <div class="container">
+            <h2>Meus Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby">
+                    <p>Treinar</p> 
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <p>Ouvir música</p> 
+                    <i class="fa-solid fa-music"></i>
+                    <p>Tirar fotos</p>
+                    <i class="fa-solid fa-camera"></i>
+                    <p>Estudar</p>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Futebol</p>
+                    <i class="  fa-solid fa-futbol"></i>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   
+   <section id="skills">
+        <div class="container">
+            <h2>Minhas Skills</h2>
+            <ul>
+                <li>🏆 Prêmio em 1° lugar campeonato interno de Karatê 2020</li>
+                <li>🏆 Prêmio em 2° lugar campeonato interno de Karatê 2019</li>
+            </ul>
+        </div>
+   </section>
+</body>
+<section id="contatos">
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo pelas redes sociais ou WhatsApp:</p>
+        <div class="contatos">
+            <a href="https://www.instagram.com/vini__godoi?igsh=MTV0NHU3enM0Y3F6Yg==" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://github.com/ViniciusGodoi7" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5519999159986" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+</html>
